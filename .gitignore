@@ -1,0 +1,5 @@
+*.exe
+*.log
+.DS_Store
+*.exe~
+gozero

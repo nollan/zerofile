@@ -58,7 +58,7 @@ func main() {
 	}
 	defer zeroFile.Close()
 	defer cleanup(tmpFilename)
-	fmt.Printf("Using temp file: '%v'\n", tmpFilename)
+	fmt.Printf("Using tempfile: '%v'\n", tmpFilename)
 
 	// Amount to write at each pass
 	amount := *blockSize
@@ -102,7 +102,7 @@ func main() {
 
 // Cleanup, remove tempfile
 func cleanup(filename string) {
-	fmt.Printf("Removing temp-file...")
+	fmt.Printf("Removing tempfile...")
 	err := os.Remove(filename)
 	if err != nil {
 		log.Fatal(err)
